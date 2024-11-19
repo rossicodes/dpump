@@ -29,9 +29,9 @@ const ConditionalAssistant: React.FC = () => {
         </>
       ) : (
         <p className="font-black text-xl">
-          Listen, I do very, very well. I'm very successful. I'm talking to some
-          of the greatest, most successful people in the whole world, okay? You
-          need much more $DPUMP than{" "}
+          Listen, I do very, very well. I&apos;m very successful. I&apos;m
+          talking to some of the greatest, most successful people in the whole
+          world, okay? You need much more $DPUMP than{" "}
           <span className="bg-gradient-to-r from-purple-600 to-pink-600 inline-block text-transparent bg-clip-text">
             {balance ? formatNumber(parseFloat(balance.uiAmountString)) : 0}
           </span>{" "}

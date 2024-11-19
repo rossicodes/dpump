@@ -28,8 +28,6 @@ const NavBar = () => {
   const { publicKey } = useWallet();
   const { connection } = useConnection();
   const { balance, setBalance } = useBalance();
-  const [loading, setLoading] = useState<boolean>(false);
-  const [error, setError] = useState<string | null>(null);
 
   const getTokenBalance = async () => {
     if (!publicKey) {
