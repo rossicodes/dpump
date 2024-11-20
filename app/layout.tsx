@@ -10,8 +10,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js AI Lite App",
-  description: "AI with Next and AI SDK",
+  title: "$DPUMP",
+  description: "RealDonaldPump's $DPUMP Token on Solana",
 };
 
 export default function RootLayout({
