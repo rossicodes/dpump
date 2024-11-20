@@ -15,7 +15,7 @@ const ConditionalAssistant: React.FC = () => {
   console.log(balance);
 
   // Define the minimum balance required to render OpenAIAssistant
-  const MIN_BALANCE = 10000000; // Adjust based on your requirements
+  const MIN_BALANCE = 5000000; // Adjust based on your requirements
 
   // Parse the uiAmountString to a number for comparison
   const balanceNumber = balance ? parseFloat(balance.uiAmountString) : 0;
