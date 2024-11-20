@@ -25,18 +25,11 @@ const ConditionalAssistant: React.FC = () => {
 
   // Prepare the paragraphs
   const paragraph1 =
-    "Listen, I do very, very well. I'm very successful. I'm talking to some of the greatest, most successful guys in the whole world, okay?";
+    "I'm talking to some of the greatest, most successful guys in the whole world, okay?";
 
   // For paragraph2, split into parts: static text, dynamic styled span, static text
   const paragraph2Parts: Array<string | React.ReactNode> = [
-    "You need much more $DPUMP than ",
-    <span
-      key="balance"
-      className="bg-gradient-to-r from-purple-600 to-pink-600 inline-block text-transparent bg-clip-text"
-    >
-      {formattedBalance}
-    </span>,
-    " if we are going to chat mano a mano.",
+    "If you hold at least 5 million $DPUMP tokens we can chat here. You can ask me anything about Memecoins. I'll tell you everything you need to know, okay?",
   ];
 
   // State to control visibility of paragraphs
@@ -86,7 +79,7 @@ const ConditionalAssistant: React.FC = () => {
             )}
           </div>
 
-          <div className="font-black text-xl my-4 flex flex-col justify-center items-center">
+          <div className="font-black text-xl my-10  flex flex-col justify-center items-center">
             <Link href="https://pump.fun/coin/BPU2J8RXPaQzp75mVrbawZEWi5p9PAo2sMafBmEGpump">
               $DPUMP Token Address:
               <span className="bg-gradient-to-r from-purple-600 to-pink-600 inline-block text-transparent bg-clip-text">
