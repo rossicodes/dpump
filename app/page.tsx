@@ -1,7 +1,6 @@
 // app/page.tsx
 
 import React from "react";
-import OpenAIAssistant from "@/app/ui/openai-assistant";
 import Donald from "@/app/donald";
 import ConditionalAssistant from "@/app/components/ConditionalAssistant"; // Import the new client component
 
@@ -12,8 +11,7 @@ export default function Home() {
         <div className="m-4">
           <Donald />
         </div>
-        <ConditionalAssistant />{" "}
-        {/* Use the client component for conditional rendering */}
+        <ConditionalAssistant />
       </div>
     </main>
   );
