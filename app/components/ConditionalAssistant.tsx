@@ -7,20 +7,7 @@ import OpenAIAssistant from "@/app/ui/openai-assistant";
 import { useBalance } from "../context/BalanceContext"; // Adjust the path as needed
 import { formatNumber } from "../../utils/fotmatNumber"; // Import the utility function
 import Typewriter from "./TypeWriter"; // Import the Typewriter component
-import dynamic from "next/dynamic";
-
-// Dynamically import CountdownTimer with SSR disabled
-const CountdownTimer = dynamic(
-  () => import("@/app/components/CountdownTimer"),
-  {
-    ssr: false,
-    loading: () => (
-      <p className="flex justify-center items-center mx-auto">
-        Loading countdown...
-      </p>
-    ), // Optional: A fallback component while loading
-  }
-);
+import Link from "next/link";
 
 const ConditionalAssistant: React.FC = () => {
   const { balance } = useBalance(); // Access balance from context
@@ -28,7 +15,7 @@ const ConditionalAssistant: React.FC = () => {
   console.log(balance);
 
   // Define the minimum balance required to render OpenAIAssistant
-  const MIN_BALANCE = 0.0001; // Adjust based on your requirements
+  const MIN_BALANCE = 10000000; // Adjust based on your requirements
 
   // Parse the uiAmountString to a number for comparison
   const balanceNumber = balance ? parseFloat(balance.uiAmountString) : 0;
@@ -99,9 +86,14 @@ const ConditionalAssistant: React.FC = () => {
             )}
           </div>
 
-          {/* Countdown Timer Positioned Below the Typewriter Container */}
-          <div className="mt-6">
-            <CountdownTimer />
+          <div className="font-black text-xl my-4 flex flex-col justify-center items-center">
+            <Link href="https://pump.fun/coin/BPU2J8RXPaQzp75mVrbawZEWi5p9PAo2sMafBmEGpump">
+              $DPUMP Token Address:
+              <span className="bg-gradient-to-r from-purple-600 to-pink-600 inline-block text-transparent bg-clip-text">
+                BPU2J8RXPaQzp75mVrbawZEWi5p9PAo2sMafBmEGpump
+              </span>{" "}
+              Buy now on Pump.fun!
+            </Link>
           </div>
         </div>
       )}

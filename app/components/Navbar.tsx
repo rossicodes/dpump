@@ -22,7 +22,7 @@ interface TokenBalance {
   uiAmountString: string;
 }
 
-const TOKEN_MINT_ADDRESS = "8pLeq83AGXBJzDajxQykXu3bGkWqJqcn6cAavZhW8exg"; // Replace with your token's mint address
+const TOKEN_MINT_ADDRESS = "BPU2J8RXPaQzp75mVrbawZEWi5p9PAo2sMafBmEGpump"; // Replace with your token's mint address
 
 const NavBar = () => {
   const { publicKey } = useWallet();
